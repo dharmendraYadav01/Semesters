@@ -1,0 +1,16 @@
+h1,h2,h3{
+    color: chartreuse ;
+    background-color: #7f83ff;
+}
+p{
+    color: #b400ff;
+    background-color: rgb(115 197 53 / 76%);
+}
+button{
+    color: #ef1616;
+    background-color: blue;
+}
+*{
+    padding: 0%;
+    margin: auto;
+}

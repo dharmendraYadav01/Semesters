@@ -1,0 +1,66 @@
+# >> What is OPP ?
+
+# Object Oriented Programming is a programming paradigm that organize code using classes and objects.It helps in building modular, reusable, and maintainable software.
+
+# Object Oriented Programming is a way of writing programs where u structure ur code around objects like real world things instead of just functions and logic.
+
+# Think of it like this:
+
+# Imagine u are building a car simulation:
+
+# > You don't just write random code to drive or stop.
+# > Instead, u define a Car class with properties like color, brand, speed and behaviors like start(), stop(), accelerate().
+
+# Class         - A blueprint or template (like a "Car" design)
+# Object        - A real world entity created from a class (like a specific Toyota car)
+# Encapsulation - Wrapping data and methods together (protecting internal state)
+# Inheritance   - One class can use the features of another (e.g., a SportsCar is a Car)
+# Polymorphism  - Different objects can respond to the same method in different ways.
+# Abstraction   - Hiding complex details
+
+>> Why use OOP ?
+
+> Better Code Structure: Group related data and functions together.
+> Code Reusability     : Use inheritance to avoid rewriting code.
+> Easier to Maintain   : Change behavior in one class, and all instances benefit.
+> Closer to Real World : Model things naturally (dogs, cars, users, etc.)
+
+>> What is class ?
+
+A class is a blueprint or template used to create objects.
+It defines : 
+- Attributes (also called properties or variables)
+- Methods (functions that operate on the object)
+But a class doesn't hold real data itself - it just defines the structure.
+> Syntax:
+
+class ClassName:
+	def _init_(self, parameters):
+		self.attribute = value 
+	def method_name(self):
+		# Method body
+
+
+Example:
+
+class Car:
+	def_int_(self,brand,color):
+		self.brand = brand
+		self.color = color
+
+	def drive(self):
+		print("The {self.color} {self.brand} is driving.")
+
+
+>> What is an object ?
+
+An object is an instance of a class.
+It's the actual thing that exists in memory and holds data.
+
+>> Creating Objects:
+
+
+car1 = Car("Toyota", "Red")
+car2 = Car("Hyundai", "Green")
+car1.drive()  # Output: The Red Toyota is driving.
+car2.drive()  # Output: The Green Hyundai is driving.

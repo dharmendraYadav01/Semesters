@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box
+        {
+            /*position: inherit;
+            left: auto;*/
+            height: 300px;
+            width: 300px;
+            background-color: red;
+            color: whitesmoke;
+            animation: dummy s;/*dummy is @keyframe hame kya kya change karna hai*/
+        }
+        @keyframes dummy
+        {
+            0% {background-color: yellow;}
+            50% {transform: black ;}
+            50% {background-color: green;}
+            100% {background-color: aqua;}
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box"> This is dummy box</div> 
+</body>
+</html>

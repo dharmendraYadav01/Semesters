@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="function.css"> -->
+</head>
+<body>
+    <!-- <div id="container"> This is container
+        <ul>
+            <li>Name</li>
+            <li>ID</li>
+            
+        </ul>
+    </div>
+    <button id="ABC"> Click Me</button> -->
+    <!-- <script>
+        
+        /*let x=document.querySelector("div");
+        x.innerText="Welcome";*/
+        /*let x=document.createElement("button");
+        x.innerText="click Me!";
+        let y=document.querySelector("div");
+        y.append(x);*/
+        let x=document.getElementById("container");
+        let y=document.getElementById("ABC");
+        let count=0;
+        y.addEventListener("click",()=>{
+            //let z=document.createElement("h1");
+            let z=document.createElement("li");
+            //z.innerText="count";
+            count.innerText="count";
+            count++;
+            x.append(count);
+        })  
+    </script> -->
+
+
+    <!-- Another topic -->
+     <script>
+        function fun()
+        {
+            alert("This is what");
+        }
+        function fun1()
+        {
+            alert("this is second");
+        }
+     </script>
+    <input type="button", value="ONCLICK" onclick="fun()">
+    <input type="button", value="DOUBLE CLICK" ondblclick="fun()">
+    <input type="button" value="click me!" oncontextmenu="fun()">
+    <input type="button" value="click me!" onmouseout="fun()">
+    <input type="button" value="click me!" onmouseenter="fun()">
+    <input type="button" value="click me!" onmousedown="fun()">
+    <input type="button" value="click me!" onmouseup="fun()">
+    <input type="button" value="click me!" onkeypress="fun()">
+    <input type="button" value="click me!" onkeyup="fun()">
+    <input type="button" value="click me!" onload="fun()">
+    <input type="button" value="click me!" onunload="fun()">
+    <input type="button" value="click me!" onresize="fun()">
+    <input type="button" value="click me!" onscroll="fun()">
+
+</body>
+</html>

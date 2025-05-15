@@ -1,0 +1,159 @@
+<!-- HTML Forms are an important part of many websites. Create a form for a survey on the topic of your choice.
+Include a variety of answer options,including text field,dropdown,radio buttons,checkboxes and a 
+submit button. Don't forget to add a tittle and consider using CSS to improve the look of your form.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="Email_validation.html  " defer></script> <!-- Link to JavaScript file -->
+
+</head>
+<body>
+      <div class="form-wrapper">
+        <h1>SURVEY FORM</h1>
+        <form action="#">
+          <div class="form-control">
+            <input type="text" id="username" placeholder="Enter your username" required>
+            <label for="username">Username</label>
+          </div>  
+          
+          <div class="form-control">
+            <input type="email" id="email" placeholder="Enter your email address" required>
+            <label for="email">Email address</label>
+          </div>
+          <div class="form-group">
+            <label for="age">Age Criterion</label>
+            <select id="age" name="age">
+                <option value="under_18">Under 18</option>
+                <option value="18_24">18-24</option>
+                <option value="25_34">25-34</option>
+                <option value="35_44">35-44</option>
+                <option value="45_54">45-54</option>
+                <option value="55_64">55-64</option>
+                <option value="65_plus">65+</option>
+            </select>
+          </div>
+          <!-- <button type="submit">Sign In</button> -->
+          <div class="form-group">
+            <label>What is your favorite color?</label>
+            <div>
+              <input type="radio" id="color_red" name="favorite_color" value="red">
+              <label for="color_red">Red</label>
+            </div>
+            <div>
+              <input type="radio" id="color_blue" name="favorite_color" value="blue">
+              <label for="color_blue">Blue</label>
+            </div>
+            <div>
+              <input type="radio" id="color_green" name="favorite_color" value="green">
+              <label for="color_green">Green</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Select your hobbies:</label>
+            <div>
+              <input type="checkbox" id="hobby_reading" name="hobbies" value="reading">
+              <label for="hobby_reading">Reading</label>
+            </div>
+            <div>
+              <input type="checkbox" id="hobby_traveling" name="hobbies" value="traveling">
+              <label for="hobby_traveling">Traveling</label>
+            </div>
+            <div>
+              <input type="checkbox" id="hobby_gaming" name="hobbies" value="gaming">
+              <label for="hobby_gaming">Gaming</label>
+            </div>
+            </div>
+            <button class="submit-btn" type="submit">Submit</button>            
+          </div>
+        </form>        
+      </div>    
+</body>
+</html>
+<!-- CSS part -->
+<!-- /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Wrapper Styling */
+.form-wrapper {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Form Elements */
+.form-control {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button.submit-btn {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button.submit-btn:hover {
+    background: #0056b3;
+}
+
+/* Add spacing to grouped inputs */
+.form-control div {
+    margin-bottom: 10px;
+}
+ -->

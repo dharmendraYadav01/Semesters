@@ -1,0 +1,104 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>hello!</p>
+        <h1>
+            Welcome!
+        </h1>
+    </div>
+    <script>
+        let x=document.getElementById("abc");
+        let y= document.getElementById("xyz");
+        x.className="ABC";
+        console.log(x);
+        y.style="color:red";
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>
+
+    <form onsubmit="return form1()">
+        <h1>Survey Form</h1>
+        <table>
+            <tr>
+                <td><label for="A">Username:</label></td>
+                <td><input type="text" placeholder="Name" id="A" name="username"><br></td>
+            </tr>
+            <tr>
+                <td><label for="B">Password:</label></td>
+                <td><input type="password" placeholder="password" id="B" name="password"><br></td>
+            </tr>
+            
+            <tr>
+                <td><label for="C">Email:</label></td>
+                <td><input type="email" placeholder="xyz@gmail.com" name="Email" id="C"></td>
+            </tr>
+            <tr>
+                <td><label for="D">Mobile No.:</label></td>
+                <td><input type="tel" placeholder="10-digit mobile no" name="Mobil" id="D"></td>
+            </tr>
+            <tr>
+                <td><label for="E">Address:</label></td>
+                <td><textarea id="E" name="address" rows="2" cols="30" placeholder="Your address here..."></textarea><br><br></td>
+            </tr>
+            <tr>
+                <td><label for="f">Confirm Password:</label></td>
+                <td><input type="password" placeholder="Confirm Password" id="f" name="Confirm Password"><br></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Submit"></td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+        function form1(){
+            let a = document.getElementById("A").value;
+            let b = document.getElementById("B").value;
+            let c = document.getElementById("C").value;
+            let d = document.getElementById("D").value;
+            let e = document.getElementById("E").value;
+            let f = document.getElementById("F").value;
+
+            if(a === "" || b === "" || c === "" || d === "" || e === "" || f==""){
+                alert("All fields must be filled!");
+                return false;
+            }
+            else if(d.length !== 10){
+                alert("Mobile number must be exactly 10 digits!");
+                return false;
+            }
+            else if(b.length < 5 || b.length > 10){
+                alert("Password must be between 5 and 10 characters!");
+                return false;
+            }
+            else if(isNaN(d))
+            {
+                alert("Must be enter the number");
+                return false;
+            }
+            else if(b!=f){
+                alert("Both password must be same");
+                return false;
+            }
+            else{
+                alert("Form submitted successfully!");
+                return true;
+            }
+        }
+    </script>
+</body>
+</html>

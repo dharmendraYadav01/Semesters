@@ -1,0 +1,21 @@
+#Box1 {
+    height: 50px;
+    width: 50px;
+    background-color: #ff0000;
+}
+#Box2 {
+    height: 50px;
+    width: 50px;
+    background-color: #54c727;
+}
+#Box3 {
+    height: 50px;
+    width: 50px;
+    background-color: #1f22c9;
+}
+#icon{
+    background-image: url(LeetCode_logo_black.png);
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+}

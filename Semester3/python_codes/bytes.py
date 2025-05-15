@@ -1,0 +1,14 @@
+"""x=[10,20,30,40]
+b=bytes(x)
+print(type(b)==bytes)
+print(b[0]) 
+"""
+list=[10,10.5,'durga',True,20]
+print(list)
+print(list[2])
+print(list[1:2:3])
+print(list[::2])
+print(list[::3])
+print(list[::])
+print(list[1::3])
+print(list[:2:3])

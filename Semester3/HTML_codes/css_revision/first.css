@@ -1,0 +1,23 @@
+/*1.this selector is only for element */
+/* ek selector ke under dusre selector nahi aate */
+/* h1{ */ 
+    /* if use for specific heading or selector then use hash and then id name like this:-- */
+    #first{
+        color: rgb(186, 226, 43);
+    }
+    #second{
+        color: blue;
+    }
+/* } */
+.same{
+    color: rgb(218, 80, 245);
+}
+/* p{
+    color: pink;
+} */
+
+/*2. this selector is universal i.e sab same */
+
+/* *{
+    color: brown;
+} */

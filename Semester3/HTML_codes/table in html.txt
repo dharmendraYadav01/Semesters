@@ -1,0 +1,6 @@
+<!-- What is table in HTML?  -->
+<!-- the table element represents data with more than one dimension,in the form of a table.
+ Table have rows,columns and cells given by descendants,
+ The rows and columns form a grid: a table's cells must completely
+ cover that grid without overlap. -->
+ <!-- write a html code in which create a table of three columns names city,age -->
